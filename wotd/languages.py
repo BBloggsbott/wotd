@@ -40,7 +40,7 @@ IRISH = Language("Irish", "ga", (TRANSPARENT_LANGUAGE), "irish-word-of-the-day&x
 ITALIAN = Language("Italian", "it", (TRANSPARENT_LANGUAGE), "italian-word-of-the-day&x=1")
 JAPANESE = Language("Japanese", "ja", (TRANSPARENT_LANGUAGE), "japanese-word-of-the-day&x=1")
 KOREAN = Language("Korean", "ko", (TRANSPARENT_LANGUAGE), "korean-word-of-the-day&x=1")
-LATIN = Language("Latin", "ls", (TRANSPARENT_LANGUAGE), "latin-word-of-the-day&x=1")
+LATIN = Language("Latin", "la", (TRANSPARENT_LANGUAGE), "latin-word-of-the-day&x=1")
 NORWEGIAN = Language("Norwegian", "no", (TRANSPARENT_LANGUAGE), "norwegian-word-of-the-day&x=1")
 PASHTO = Language("Pashto", "ps", (TRANSPARENT_LANGUAGE), "pashto-word-of-the-day&x=1")
 POLISH = Language("Polish", "pl", (TRANSPARENT_LANGUAGE), "polish-word-of-the-day&x=1")

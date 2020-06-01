@@ -2,7 +2,7 @@ from lxml import etree
 import requests
 import re
 
-from languages import Language, ENGLISH
+from .languages import Language, ENGLISH
 
 TRANSPARENT_LANGUAGE_URL = "http://feeds.feedblitz.com/"
 MERRIAM_WEBSTER_URL = "https://www.merriam-webster.com/word-of-the-day"

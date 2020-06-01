@@ -5,8 +5,8 @@ from termcolor import colored
 
 import colorama
 
-from languages import LANGUAGES, SOURCES, ENGLISH, Language, MERRIAM_WEBSTER, TRANSPARENT_LANGUAGE
-from scrappers import get_from_transparent_language, get_from_merriam_webster, WORD_KEY, MEANING_KEY, POS_KEY, EXAMPLE_KEY, EXAMPLE_EN_KEY
+from .languages import LANGUAGES, SOURCES, ENGLISH, Language, MERRIAM_WEBSTER, TRANSPARENT_LANGUAGE
+from .scrappers import get_from_transparent_language, get_from_merriam_webster, WORD_KEY, MEANING_KEY, POS_KEY, EXAMPLE_KEY, EXAMPLE_EN_KEY
 
 CONFIG_LANG = "lang"
 CONFIG_OUTPUT_PATTERN = "output_pattern"
@@ -45,7 +45,7 @@ class WOTDConfig:
             config_stream = open(self.config_file, "r")
             try:
                 config = yaml.load(config_stream, Loader=yaml.FullLoader)
-            except yaml.YAMLError as err:
+            except yaml.YAMLError:
                 print("Error with config file for wotd. Using defaults")
                 config_stream.close()
                 config = {}
