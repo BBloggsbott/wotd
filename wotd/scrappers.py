@@ -51,7 +51,6 @@ def get_from_transparent_language(lang :Language):
 
 def get_from_merriam_webster(lang :Language):
     url = MERRIAM_WEBSTER_URL
-    STRONG_PATTERN = "<strong>:</strong>"
     response = requests.get(url)
     if response.status_code == 200:
         html_re = re.compile(r'<.*?>')
